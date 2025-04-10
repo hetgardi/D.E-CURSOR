@@ -1,0 +1,25 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .seat-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .seat {
+    width: 50px;
+    height: 50px;
+  }
+} 

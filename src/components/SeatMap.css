@@ -71,14 +71,21 @@
   overflow: hidden;
 }
 
-.seat.available {
-  background-color: #28a745;
-  color: white;
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .seat.occupied {
   background-color: #dc3545;
-  color: white;
+  pointer-events: none;
+}
+
+.seat.available {
+  background-color: #28a745;
+  cursor: default;
 }
 
 .seat:hover {
@@ -181,6 +188,13 @@
   background-color: #5c636a;
 }
 
+.sensor-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .seat {
@@ -203,4 +217,4 @@
   .stat-value {
     font-size: 16px;
   }
-} 
+}

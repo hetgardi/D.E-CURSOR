@@ -1,24 +1,44 @@
 {
-  "name": "amts-tracking",
-  "version": "0.1.0",
+  "name": "de-cursor-amts-tracker",
+  "version": "1.0.0",
   "private": true,
+  "description": "AMTS Bus Tracker with Real-Time Seat Monitoring using Arduino sensors",
+  "author": "hetgardi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hetgardi/D.E-CURSOR.git"
+  },
+  "keywords": [
+    "amts",
+    "bus-tracker",
+    "arduino",
+    "react",
+    "iot",
+    "seat-monitoring"
+  ],
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
+    "serialport": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-server": "node server.js",
+    "dev": "concurrently \"npm run start-server\" \"npm start\"",
+    "server": "node server.js"
   },
   "eslintConfig": {
     "extends": [
